@@ -56,30 +56,34 @@ export const projectsData = [
   {
     title: "NextIn Learning Hub",
     description:
-      "NextIn 🎯 is a cutting-edge online learning platform designed to revolutionize the educational experience. It provides users with seamless access to a diverse array of courses through an intuitive interface.",
-    tags: ["Javascript", "React", "Redux-toolkit", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: "nextInImg",
+    "NextIn 🎯 is innovative online learning platform, offers users seamless access to a wide range of courses through an intuitive interface.",
+    tags: ["Javascript", "React", "Redux-toolkit", "MongoDB"],
+    imageUrl: nextInImg,
+    projectUrl: "https://github.com/Taniya23Y/NextIn-Project",
   },
   {
     title: "DuoStudio-Clone",
     description:
       "Developed a 🕸️ responsive web application Clone inspired by Duo-Studio, showcasing a deep passion for web design and development.",
     tags: ["Javascript", "Gsap", "Locomotive-scroll", "Design"],
-    imageUrl: "/public/DuoStudio.png",
+    imageUrl: DuoStudioImg,
+    projectUrl: "https://duo-studio-webclone.netlify.app/",
   },
   {
     title: "CodeCompiler",
     description:
-      "Elevate your coding experience with CodeCompiler 💻, enabling real-time HTML, CSS, and JS coding, sharing, and collaboration. Seamlessly save, share, and download your projects while ensuring security with authentication and efficient project management through MongoDB integration. Explore, create, and innovate with ease – right from your browser.",
+      "Elevate your coding experience with CodeCompiler 💻, enabling real-time HTML, CSS, and JS coding, sharing. Seamlessly save, share, edit and download your projects.",
     tags: ["React", "TypeScript", "MongoDB", "Tailwind", "Shadcn"],
-    imageUrl: "/public/CodeCompiler.png",
+    imageUrl: codeCompilerImg,
+    projectUrl: "https://github.com/Taniya23Y/Code.Compiler.Project",
   },
   {
-    title: "Word Analytics",
+    title: "Razorpay-Clone",
     description:
       "A 🌐 responsive web application Clone inspired by 💸Razorpay, built using HTML, CSS, and Tailwind CSS.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: "/public/Razorpay.png",
+    imageUrl: RazorpayImg,
+    projectUrl: "https://github.com/Taniya23Y/Razorpay.com-clone",
   },
 ] as const;
 

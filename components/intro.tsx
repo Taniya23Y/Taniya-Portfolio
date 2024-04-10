@@ -134,6 +134,7 @@ export default function Intro() {
           <FaHashnode />
         </a>
       </motion.div>
+      
     </section>
   );
 }

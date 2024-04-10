@@ -8,7 +8,7 @@ import SectionHeading from "./section-heading";
 export default function About() {
   return (
     <motion.section
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-2 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -31,7 +31,7 @@ export default function About() {
         diving deep into the React ecosystem, my journey has been nothing short
         of exhilarating! 🌐
       </p>
-      <p className="mb-3 ">
+      <p className=" ">
         <span className="font-extrabold">What Fires Me Up 🔥 </span>
         <ul className="list-inside">
           <li>
