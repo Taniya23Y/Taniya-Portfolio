@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { IoMdDocument } from "react-icons/io";
 import { FaGithubSquare } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FaHashnode } from "react-icons/fa6";
@@ -17,8 +16,11 @@ export default function Intro() {
   // const { ref } = useSectionInView("Home", 0.5);
   // const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
-      <div className="flex justify-center items-center">
+    <section
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
+      <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -55,7 +57,7 @@ export default function Intro() {
         </div>
       </div>
 
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -66,20 +68,31 @@ export default function Intro() {
         <span className="italic">websites & applications</span>. My primary
         focus is 🎯{" "}
         <span className="underline font-bold">JS(React | Next.js)</span>
-      </motion.p>
+      </motion.h1>
 
-      <motion.div>
+      <motion.div
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
+        }}
+      >
         {/* contact button  */}
         <Link
           href="#contact"
-          className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full 
+          outline-none focus:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact me here <BsArrowRight />
+          Contact me here{" "} 
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         {/* resume download  */}
-        <a className="bg-white px-7 py-3 flex items-center gap-2 rounded-full"
-          href="/Resume.pdf" download
+        <a
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          href="/Resume.pdf"
+          download
         >
           View Resume{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
