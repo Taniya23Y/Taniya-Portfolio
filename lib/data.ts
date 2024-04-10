@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import nextInImg from "@/public/NextIn LH.png";
+import codeCompilerImg from "@/public/CodeCompiler.png";
+import DuoStudioImg from "@/public/DuoStudio.png";
+import RazorpayImg from "@/public/Razorpay.png";
 
 export const links = [
   {
@@ -53,25 +54,32 @@ export const experienceData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "NextIn Learning Hub",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "NextIn 🎯 is a cutting-edge online learning platform designed to revolutionize the educational experience. It provides users with seamless access to a diverse array of courses through an intuitive interface.",
+    tags: ["Javascript", "React", "Redux-toolkit", "MongoDB", "Tailwind", "Prisma"],
+    imageUrl: "nextInImg",
   },
   {
-    title: "rmtDev",
+    title: "DuoStudio-Clone",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Developed a 🕸️ responsive web application Clone inspired by Duo-Studio, showcasing a deep passion for web design and development.",
+    tags: ["Javascript", "Gsap", "Locomotive-scroll", "Design"],
+    imageUrl: "/public/DuoStudio.png",
+  },
+  {
+    title: "CodeCompiler",
+    description:
+      "Elevate your coding experience with CodeCompiler 💻, enabling real-time HTML, CSS, and JS coding, sharing, and collaboration. Seamlessly save, share, and download your projects while ensuring security with authentication and efficient project management through MongoDB integration. Explore, create, and innovate with ease – right from your browser.",
+    tags: ["React", "TypeScript", "MongoDB", "Tailwind", "Shadcn"],
+    imageUrl: "/public/CodeCompiler.png",
   },
   {
     title: "Word Analytics",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A 🌐 responsive web application Clone inspired by 💸Razorpay, built using HTML, CSS, and Tailwind CSS.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: "/public/Razorpay.png",
   },
 ] as const;
 
@@ -85,14 +93,14 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
+  "Shadcn",
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "SQL",
+  "MySQL",
+  "C/C++",
+  "Figma",
+  "GSAP",
 ] as const;
