@@ -107,4 +107,11 @@ export const skillsData = [
   "C/C++",
   "Figma",
   "GSAP",
+  "Locomotive JS",
+  "Framer Motion",
+  "Problem-solving",
+  "DSA",
+  "Frontend", 
+  "Backend", 
+  "MERN Stack", 
 ] as const;
