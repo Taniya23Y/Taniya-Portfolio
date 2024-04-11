@@ -31,7 +31,7 @@ export default function About() {
         diving deep into the React ecosystem, my journey has been nothing short
         of exhilarating! 🌐
       </p>
-      <p className=" ">
+      <div className=" ">
         <span className="font-extrabold">What Fires Me Up 🔥 </span>
         <ul className="list-inside">
           <li>
@@ -50,7 +50,7 @@ export default function About() {
             for creating pixel-perfect designs.
           </li>
         </ul>
-      </p>
+      </div>
     </motion.section>
   );
 }
