@@ -39,12 +39,12 @@ export const experiencesData = [
     title: "Graduated bootcamp",
     location: "SVCE, Indore",
     description:
-      "I am a third year under graduate in computer science & Engineering. I learn a lot in my college journey.",
+      "I am a third year under graduate Student in computer science & Engineering. I learn a lot in my college journey.",
     icon: React.createElement(LuGraduationCap),
     date: "2021 - 2025",
   },
   {
-    title: "FrontendDeveloper",
+    title: "Frontend Developer",
     location: "Indore, India",
     description: "I worked as a frontend developer for 3 month",
     icon: React.createElement(CgWorkAlt),
