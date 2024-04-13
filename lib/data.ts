@@ -75,7 +75,7 @@ export const projectsData = [
       "Developed a 🕸️ responsive web application Clone inspired by Duo-Studio, showcasing a deep passion for web design and development.",
     tags: ["Javascript", "Gsap", "Locomotive-scroll", "Design"],
     imageUrl: DuoStudioImg,
-    projectUrl: "https://duo-studio-webclone.netlify.app/",
+    projectUrl: "https://github.com/Taniya23Y/Duo-Studio-Clone",
   },
   {
     title: "CodeCompiler",
