@@ -36,25 +36,25 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
+    title: "Graduation bootcamp",
     location: "SVCE, Indore",
     description:
-      "I am a third year under graduate Student in computer science & Engineering. I learn a lot in my college journey.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2021 - 2025",
+      "I am a third year under graduate Student 👩‍🎓 in computer science & Engineering. I am learning a lot in my college journey.",
+    icon: React.createElement(LuGraduationCap), 
+    date: "2021 - present",
   },
   {
-    title: "Frontend Developer",
+    title: "Frontend Web Developer",
     location: "Indore, India",
-    description: "I worked as a frontend developer for 3 month",
+    description: "I worked as a frontend web developer at Oasis Infobyte for 1 month(Remote) 👩‍💻.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023",
+    date: "2023- 1 month WFH",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Mern-Stack Developer(Learner)",
+    location: "Indore, India",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm now a full-stack developer 🚀 with a focus on JavaScript and React.js. Although my experience started with a one-month remote Frontend Developer role at Oasis Infobyte, I'm dedicated to mastering (DSA) & MERN stack. My stack includes React.js, Next.js(Familiar), TypeScript(Familiar), Tailwind CSS, and Prisma. I'm actively seeking full-time opportunities to apply my skills and contribute to impactful projects. 💻",
     icon: React.createElement(FaReact),
     date: "2024 - present",
   },
