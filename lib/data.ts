@@ -78,7 +78,7 @@ export const projectsData = [
     projectUrl: "https://github.com/Taniya23Y/Duo-Studio-Clone",
   },
   {
-    title: "CodeCompiler",
+    title: "Code.Compiler",
     description:
       "Elevate your coding experience with CodeCompiler 💻, enabling real-time HTML, CSS, and JS coding, sharing. Seamlessly save, share, edit and download your projects.",
     tags: ["React", "TypeScript", "MongoDB", "Tailwind", "Shadcn"],
@@ -89,7 +89,7 @@ export const projectsData = [
     title: "Razorpay-Clone",
     description:
       "A 🌐 responsive web application Clone inspired by 💸Razorpay, built using HTML, CSS, and Tailwind CSS.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["HTML", "CSS", "JAVASCRIPT", "Tailwind"],
     imageUrl: RazorpayImg,
     projectUrl: "https://github.com/Taniya23Y/Razorpay.com-clone",
   },
