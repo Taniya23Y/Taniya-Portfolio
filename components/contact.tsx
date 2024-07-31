@@ -1,15 +1,42 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    toast.loading("Sending...");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "9b8b8fea-dbff-4de7-9e7c-d5c294f8a624");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      toast.dismiss();
+      if (data.success) {
+        toast.success("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        toast.error(data.message || "Failed to send the message.");
+      }
+    } catch (error) {
+      toast.dismiss();
+      toast.error("An error occurred. Please try again.");
+    }
+  };
 
   return (
     <motion.section
@@ -33,28 +60,16 @@ export default function Contact() {
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
+        <a className="underline" href="mailto:taniyayadav882@gmail.com">
           taniyayadav882@gmail.com
         </a>{" "}
         or through this form.
       </p>
 
-      <form
-        className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully!");
-        }}
-      >
+      <form className="mt-10 flex flex-col dark:text-black" onSubmit={onSubmit}>
         <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="senderEmail"
+          name="email"
           type="email"
           required
           maxLength={500}
@@ -69,6 +84,7 @@ export default function Contact() {
         />
         <SubmitBtn />
       </form>
+      {/* <Toaster position="top-center" reverseOrder={false} /> */}
     </motion.section>
   );
 }
