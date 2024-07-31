@@ -5,15 +5,17 @@ import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import SubmitBtn from "./submit-btn";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
 
-  const onSubmit = async (event) => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    toast.loading("Sending...");
-    const formData = new FormData(event.target);
+    // toast.loading("Sending...");
+    const formData = new FormData(event.target as HTMLFormElement);
 
     formData.append("access_key", "9b8b8fea-dbff-4de7-9e7c-d5c294f8a624");
 
@@ -25,16 +27,18 @@ export default function Contact() {
 
       const data = await response.json();
 
-      toast.dismiss();
       if (data.success) {
         toast.success("Form Submitted Successfully");
-        event.target.reset();
+        setResult("Form Submitted Successfully");
+        (event.target as HTMLFormElement).reset(); // Ensuring the target is of type HTMLFormElement
+        setTimeout(() => setResult(""), 5000); // Hide result message after 5 seconds
       } else {
         toast.error(data.message || "Failed to send the message.");
+        setResult(data.message || "Failed to send the message.");
       }
     } catch (error) {
-      toast.dismiss();
       toast.error("An error occurred. Please try again.");
+      setResult("An error occurred. Please try again.");
     }
   };
 
@@ -83,8 +87,17 @@ export default function Contact() {
           maxLength={5000}
         />
         <SubmitBtn />
+        {/* {result && (
+        <div
+          className={`mt-4 text-center text-lg font-medium ${
+            result === "Form Submitted Successfully" ? "text-green-500" : "text-red-500"
+          }`}
+        >
+          {result}
+        </div>
+      )} */}
       </form>
-      {/* <Toaster position="top-center" reverseOrder={false} /> */}
+      
     </motion.section>
   );
 }
