@@ -2,7 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import nextInImg from "@/public/NextIn LH.png";
+import piyushFolio from "@/public/PortFolio.png";
+import eduMeetImg from "@/public/Banner.png";
+import tasteTrekImg from "@/public/TasteTrek.png";
 import codeCompilerImg from "@/public/CodeCompiler.png";
 import DuoStudioImg from "@/public/DuoStudio.png";
 import RazorpayImg from "@/public/Razorpay.png";
@@ -62,12 +64,28 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "NextIn Learning Hub",
+    title: "Piyush Portfolio",
     description:
-    "NextIn 🎯 is innovative online learning platform, offers users seamless access to a wide range of courses through an intuitive interface.",
+    "This portfolio 🎯 was designed and developed by me 🎨 for my classmate Piyush 👨‍💻. It showcases Piyush's projects and skills in an intuitive and visually appealing manner 🌟.",
+    tags: ["Figma", "React", "Redux-toolkit", "Framer Motion", "GSAP"],
+    imageUrl: piyushFolio,
+    projectUrl: "https://ui-portfolio-umber.vercel.app/",
+  },
+  {
+    title: "TasteTrek Website ",
+    description:
+    "TasteTrek 🍽️ is a React.js-based food website using React Router, Redux Toolkit, and Jest. Designed in Figma and inspired by Dribbble.",
+    tags: ["Javascript", "React", "Redux-toolkit", "Jest"],
+    imageUrl: tasteTrekImg,
+    projectUrl: "https://github.com/Taniya23Y/tastetrek",
+  },
+  {
+    title: "EduMeet Learning Hub",
+    description:
+    "EduMeet 🎯 is innovative online learning platform, offers users seamless access to a wide range of courses through an intuitive interface.",
     tags: ["Javascript", "React", "Redux-toolkit", "MongoDB"],
-    imageUrl: nextInImg,
-    projectUrl: "https://github.com/Taniya23Y/NextIn-Project",
+    imageUrl: eduMeetImg,
+    projectUrl: "https://github.com/Taniya23Y/edumeet",
   },
   {
     title: "DuoStudio-Clone",
